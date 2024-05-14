@@ -165,8 +165,6 @@
     }
 
 
-
-
     echo '<hr>';
 /**
   * 11. Bir dəyişən götürün tipi array 1-20 qədər ədədlər olsun. İlk 10 rəqəmdən başqa digərlərin çapa verin.
