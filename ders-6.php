@@ -62,8 +62,8 @@ echo '<hr>';
 $numbers = range(1, 100);
 $myNewArr = [];
 $sum = 0;
-for ($i = 0; $i <= 100; $i++) {
-    if ($i >= 50 && $i <= 70 && $i % 2 == 0) {
+for ($i = 1; $i <= 100; $i++) {
+    if ($i > 50 && $i < 70 && $i % 2 == 0) {
         $myNewArr[] = $i;
         $sum += $i;
     }
@@ -73,3 +73,34 @@ echo 'CEM:' . $sum . '<br/>';
 for ($i = 0; $i <= count($myNewArr); $i++) {
     echo $myNewArr[$i] . '<br/>';
 }
+
+echo '<hr>';
+
+$cars = [
+    [
+        'id' => 1,
+        'name' => 'BMW',
+    ],
+    [
+        'id' => 2,
+        'name' => 'Audi',
+    ],
+    [
+        'id' => 3,
+        'name' => 'Mercedes',
+    ],
+    [
+        'id' => 4,
+        'name' => 'Ford'
+    ]
+    ];
+
+    for($i = 0; $i <= count($cars); $i++){
+        echo $cars[$i]['name'].'<br/>';
+    }
+
+    echo '<hr>';
+
+    foreach($cars as $car){
+        echo '- '.$car['name'].'<br/>';
+    }
