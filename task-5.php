@@ -62,7 +62,7 @@
     $sum = 0;
     foreach ($numbers as $number) {
         if ($number % 3 == 0) {
-            echo $number;
+           $sum += $number;
         }
     }
     echo $sum;
