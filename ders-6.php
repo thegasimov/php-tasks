@@ -77,22 +77,22 @@ for ($i = 0; $i <= count($myNewArr); $i++) {
 echo '<hr>';
 
 $cars = [
-    [
-        'id' => 1,
-        'name' => 'BMW',
-    ],
-    [
-        'id' => 2,
-        'name' => 'Audi',
-    ],
-    [
-        'id' => 3,
-        'name' => 'Mercedes',
-    ],
-    [
-        'id' => 4,
-        'name' => 'Ford'
-    ]
+        [
+            'id' => 1,
+            'name' => 'BMW',
+        ],
+        [
+            'id' => 2,
+            'name' => 'Audi',
+        ],
+        [
+            'id' => 3,
+            'name' => 'Mercedes',
+        ],
+        [
+            'id' => 4,
+            'name' => 'Ford'
+        ]
     ];
 
     for($i = 0; $i <= count($cars); $i++){
