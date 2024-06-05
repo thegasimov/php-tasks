@@ -7,4 +7,7 @@ error_reporting(E_ALL);
 
 require './datas/cars.php';
 require './datas/posts.php';
+require './vendor/autoload.php';
+
+
 
