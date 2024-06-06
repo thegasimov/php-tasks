@@ -20,4 +20,15 @@ $file = fopen(FILE,'a+');
 fputcsv($file,['Test-'.rand(1,100)]);
 fclose($file);
 
-dd($data);
+
+
+
+$newfile = fopen('test.txt','w');
+
+fwrite($newfile,'Salam');
+
+fclose($newfile);
+
+
+
+dd($data, $newfile);
