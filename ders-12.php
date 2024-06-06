@@ -9,7 +9,15 @@ require './vendor/autoload.php';
 define('FILE','./data.csv');
 
 $file = fopen(FILE,'r');
-while(fgetcsv($file,filesize(FILE))){
-
+while($row = fgetcsv($file,filesize(FILE))){
+    $data[] = $row;
 }
+fclose($file);
 
+
+
+$file = fopen(FILE,'a+');
+fputcsv($file,['Test-'.rand(1,100)]);
+fclose($file);
+
+dd($data);
