@@ -8,5 +8,3 @@ use tural\Name;
 $name= new Name();
 $name-> setName('vasif');
 echo $name-> getName ();
-
-// Sagolsun
